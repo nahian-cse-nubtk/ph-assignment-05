@@ -1,0 +1,118 @@
+/*link for inter google font*/
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+/*hind maduri font*/
+@import url('https://fonts.googleapis.com/css2?family=Hind+Madurai:wght@300;400;500;600;700&display=swap');
+
+body{
+    margin: 0 auto;
+}
+/* shared style */
+/* backgorud ligt-green */
+.li-bg{
+    background-color: rgba(65, 255, 107, 0.1);
+}
+
+.dispaly-flex{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+
+}
+
+.inter-font{
+  font-family: "Inter", sans-serif;
+}
+.hind-madurai-font {
+  font-family: "Hind Madurai", sans-serif;
+ }
+
+ .text-white{
+    color: rgba(255, 255, 255, 1);
+ }
+.li-text{
+    font-size: 16px;
+    font-weight: bold;
+    color: rgba(0, 0, 0, 1);
+
+}
+.bg-green-text-white{
+    background-color: rgba(0, 166, 62, 1);
+    color: rgba(255, 255, 255, 1);
+}
+
+
+
+/* individual style */
+
+/* navber style */
+
+.nav-ber-logo{
+    width: 50px;
+    height: 50px;
+}
+.nav-ber-right-part-image{
+width: 24px;
+height: 24px;
+}
+ul{
+    list-style: none;
+}
+.nav-ber-left-part{
+    display: flex;
+    gap: 5px;
+    align-items: center;
+    color: rgba(0, 103, 71, 1);
+    font-size: 20px;
+    font-weight: bold;
+
+}
+
+.nav-ber-ul{
+    display: flex;
+    gap: 5px;
+    align-items: center;
+
+}
+.nav-ber-li{
+    width: 123px;
+    height: 52px;
+    border-radius: 30px;
+
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1920px;
+    height: 100px;
+    padding: 24px 60px;
+}
+
+/*navber style end here*/
+
+/*hero section of the header start here*/
+
+.hero-part{
+text-align: center;
+max-width: 1920px;
+height: 250px;
+background: linear-gradient(90.00deg, rgba(1.251827359199524, 49.64006805419922, 34.606834411621094, 1),rgba(0, 103, 71, 1) 50%,rgba(1, 50, 35, 1) 100%);
+padding: 12px 0px;
+}
+
+.logo-hero-part{
+    width: 92px;
+    height: 92px;
+}
+.hero-heading-text{
+    font-weight: bold;
+    font-size: 40px;
+
+}
+.hero-paragragh-text{
+    font-size: 20px;
+    font-weight: 700;
+}
