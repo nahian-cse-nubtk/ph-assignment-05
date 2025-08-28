@@ -16,6 +16,7 @@ let Hearts = 0;
   const coinNumber = document.getElementById("coin-number");
   const calls = document.querySelectorAll(".call-count");
   const allHistory = document.getElementById("all-history")
+  const clear = document.getElementById("clear-all-button")
    const history = [];
 
   for (let call of calls) {
@@ -62,3 +63,9 @@ function showHistory(){
         allHistory.appendChild(div);
     }
 }
+
+function allClear(){
+    allHistory.innerHTML = "";
+    history.length = 0;
+}
+clear.addEventListener("click", allClear);
