@@ -63,8 +63,8 @@ background-color: white;
 /* navber style */
 
 .nav-ber-logo{
-    width: 50px;
-    height: 50px;
+    width: 60px;
+    height: 60px;
 }
 .nav-ber-right-part-image{
 width: 24px;
@@ -78,7 +78,7 @@ ul{
     gap: 5px;
     align-items: center;
     color: rgba(0, 103, 71, 1);
-    font-size: 20px;
+    font-size: 30px;
     font-weight: bold;
 
 }
@@ -101,7 +101,7 @@ nav{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    max-width: 100%;
+    width: cover;
     height: 50px;
     padding: 24px 60px;
 }
@@ -112,7 +112,7 @@ nav{
 
 .hero-part{
 text-align: center;
-max-width: 100%;
+width: cover;
 height: 250px;
 background: linear-gradient(90.00deg, rgba(1.251827359199524, 49.64006805419922, 34.606834411621094, 1),rgba(0, 103, 71, 1) 50%,rgba(1, 50, 35, 1) 100%);
 padding: 12px 0px;
@@ -247,3 +247,67 @@ color: rgba(17, 17, 17, 1);
 
 /*mobile responsive*/
 
+@media(max-width: 667px) {
+
+    .card-section{
+        grid-template-columns: repeat(1,1fr);
+
+    }
+    .total-section{
+        grid-template-columns: 1fr;
+
+        margin: 0 auto;
+    }
+
+    .nav-ber-li{
+    width: 60px;
+    height: 30px;
+}
+.nav-ber-left-part{
+    font-size: 14px;
+}
+.nav-ber-logo{
+    width: 35px;
+    height: 35px;
+}
+ nav{
+    width: cover;
+    padding: 5px 5px;
+    margin: 0 auto;
+
+  }
+
+.nav-ber-ul{
+    gap: 3px;
+
+}
+.logo-hero-part{
+    width: 50px;
+    height: 50px;
+}
+.hero-heading-text{
+    font-weight: bold;
+    font-size: 20px;
+
+}
+.hero-part{
+    width: cover;
+
+}
+.hero-paragragh-text{
+    font-size: 14px;
+    font-weight: 600;
+
+}
+.button-size-for-card{
+width: 90px;
+height: 40px;
+}
+.history-clear-button{
+    width: 80px;
+    height: 40px;
+}
+.dispaly-flex{
+    gap: 2px;
+}
+}
