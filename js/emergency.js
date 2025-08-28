@@ -48,7 +48,9 @@ let Hearts = 0;
 function showHistory(){
     allHistory.innerHTML = "";
     for(let item of history){
-    allHistory.innerHTML +=
+        const div = document.createElement("div");
+        div.className = "history";
+    div.innerHTML =
         `<div>
             <h1 class="hind-madurai-font history-type">${item.serviceName}</h1>
             <p class="roboto-font card-text date-and-number">${item.serviceNumber}</p>
@@ -57,5 +59,6 @@ function showHistory(){
             <h1 class="roboto-font card-text date-and-number">${item.time}</h1>
         </div>
         `;
+        allHistory.appendChild(div);
     }
 }
