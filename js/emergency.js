@@ -1,12 +1,12 @@
 // heart count
-let Hearts = 0;
+let numberHearts = 0;
   const heartNumber = document.getElementById("heart-number");
   const hearts = document.querySelectorAll(".heart-count");
 
   for (let heart of hearts) {
     heart.addEventListener("click", function() {
-      Hearts++;
-      heartNumber.textContent = Hearts;
+      numberHearts++;
+      heartNumber.textContent = numberHearts;
     });
   }
 
@@ -21,7 +21,7 @@ let Hearts = 0;
 
   for (let call of calls) {
     call.addEventListener("click", function() {
-        const service = call.closest(".card");;
+        const service = call.closest(".card");
         const serviceName = service.querySelector(".service-name").textContent;
 
         const serviceNumber = service.querySelector(".service-number").textContent;
@@ -46,6 +46,8 @@ let Hearts = 0;
     });
 
 }
+
+//show history functionality
 function showHistory(){
     allHistory.innerHTML = "";
     for(let item of history){
@@ -63,9 +65,32 @@ function showHistory(){
         allHistory.appendChild(div);
     }
 }
-
+//clear button functionality
 function allClear(){
     allHistory.innerHTML = "";
     history.length = 0;
 }
 clear.addEventListener("click", allClear);
+
+
+// copy count and copy to clipboard
+let numberCopies = 0;
+  const copyNumber = document.getElementById("copy-number");
+  const copies = document.querySelectorAll(".copy-count");
+  const copiedNumbers = document.querySelectorAll("copied-numbers");
+
+
+  for (let copy of copies) {
+
+    copy.addEventListener("click", function() {
+      const service = copy.closest(".card");
+      const serviceNumber = service.querySelector(".service-number").textContent;
+
+      numberCopies++;
+      copyNumber.textContent = numberCopies;
+
+       navigator.clipboard.writeText(serviceNumber);
+
+      alert(`Hotline Number ${serviceNumber} is copied`);
+    });
+  }
