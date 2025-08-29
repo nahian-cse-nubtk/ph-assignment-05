@@ -78,7 +78,7 @@ ul{
     gap: 5px;
     align-items: center;
     color: rgba(0, 103, 71, 1);
-    font-size: 30px;
+    font-size: 25px;
     font-weight: bold;
 
 }
@@ -125,11 +125,13 @@ padding: 12px 0px;
 .hero-heading-text{
     font-weight: bold;
     font-size: 40px;
+    margin-top: -1px;
 
 }
 .hero-paragragh-text{
     font-size: 20px;
     font-weight: 700;
+    margin-top: -20px;
 }
 /*hero section end here*/
 
@@ -188,7 +190,7 @@ border: 1px solid rgba(212, 214, 213, 1);
     justify-content: center;
 
 }
-
+/* total emergency card and history section */
 .total-section{
     padding: 60px;
     margin: 0 auto;
@@ -231,14 +233,15 @@ color: rgba(17, 17, 17, 1);
     display: flex;
     align-items: center;
     justify-content: space-between;
-    gap: 20px;
-    background-color: aliceblue;
+    /* gap: 20px; */
+    background-color: rgb(243, 245, 247);
     height: 80px;
-    padding: 10px 10px;
-    margin-top: 10px;
+    padding: 5px 7px;
+    margin-top: 15px;
+    border-radius: 15px;
 }
 .history-type{
-    font-size: 20px;
+    font-size: 18px;
     font-weight: bold;
 }
 .date-and-number{
@@ -288,6 +291,7 @@ color: rgba(17, 17, 17, 1);
 .hero-heading-text{
     font-weight: bold;
     font-size: 20px;
+    margin-top: 0px;
 
 }
 .hero-part{
@@ -297,6 +301,7 @@ color: rgba(17, 17, 17, 1);
 .hero-paragragh-text{
     font-size: 14px;
     font-weight: 600;
+    margin-top: 0px;
 
 }
 .button-size-for-card{

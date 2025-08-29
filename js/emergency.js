@@ -25,6 +25,11 @@ let numberHearts = 0;
         const serviceName = service.querySelector(".service-name").textContent;
 
         const serviceNumber = service.querySelector(".service-number").textContent;
+        let now = new Date();
+        let hours = now.getHours();
+        let minutes = now.getMinutes();
+        let seconds = now.getSeconds();
+        let timeNow = `${hours}:${minutes}:${seconds}`;
 
       if (coins < 20) {
         alert("Not enough coins! Needeed at least 20 coins to make a call.");
@@ -36,13 +41,13 @@ let numberHearts = 0;
       const everyCall ={
         serviceName: serviceName,
         serviceNumber: serviceNumber,
-        time: new Date().toLocaleString()
+        time: timeNow
       };
       history.push(everyCall);
 
     showHistory();
 
-    alert(`Calling for ${serviceName} at ${serviceNumber} and 20 conins will leave`);
+    alert(`📞Calling for ${serviceName} at ${serviceNumber} and 20 conins will leave`);
     });
 
 }
